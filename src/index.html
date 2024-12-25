@@ -1,23 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My page</title>
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
-  <body>
-    <header class="page-header">
-      <div class="container">
-        <ul class="menu">
-          <li class="menu-item">
-            <a class="menu-link" href="./1-timer.html">Timer</a>
-          </li>
-          <li class="menu-item">
-            <a class="menu-link" href="./2-snackbar.html">Snackbar</a>
-          </li>
-        </ul>
-      </div>
-    </header>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Search</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <form id="search-form" class="search-form">
+      <input type="text" name="searchQuery" placeholder="Search images..." autocomplete="off">
+      <button type="submit" class="search-button">Search</button>
+    </form>
+    <div class="loader hidden">Loading images, please wait...</div>
+    <div class="gallery"></div>
+    <div class="error-message hidden">Sorry, there are no images matching your search query. Please try again!</div>
+  </div>
+  <script type="module" src="main.js"></script>
+</body>
 </html>
